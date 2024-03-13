@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img src="./Assets/logo.png" alt="logo" class="logo" />
+        <ul class="icons">
+          <li class="corp">
+            <img src="./Assets/corporate-news.png" alt="menu" />
+          </li>
+          <li class="corp">
+            <img src="./Assets/live-news.png" alt="menu" />
+          </li>
+          <li class="corp">
+            <img src="./Assets/stock-in-action.png" alt="menu" />
+          </li>
+          <li class="corp">
+            <img src="./Assets/tables.png" alt="menu" />
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="header">
+          <div class="title">Products</div>
+          <div class="user">
+            <div class="bell-icon">
+              <img src="./Assets/notifications-icon.png" alt="notifications" />
+            </div>
+            <div class="dropdown">
+              <button onclick="toggleDropdown()" class="dropbtn">
+                Matthews Gill
+                <img src="./Assets/down-arrow.png" alt="arrow" class="dropdown-icon"/>
+              </button>
+              
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-wrap">
+          <nav class="button-tabs">
+            <button class="btns">Paris Olympic 2024 - 300</button>
+            <button class="btns">T20 World Cup 2024 - 200</button>
+            <button class="btns">Manchester United - 200</button>
+            <button class="btns">Mumbai City FC - 220</button>
+            <button class="btns">Motorsports - 10</button>
+          </nav>
+          <div class="search-bar">
+            <div class="search-wrap">
+              <label class="search-label">Search</label>
+              <input type="text" placeholder="Search..." class="search-input" />
+              <img
+                src="./Assets/Vector (1).png"
+                alt="search"
+                class="search-icon"
+              />
+            </div>
+            <div class="buttons">
+              <button class="add-btn" onclick="addProducts()">
+                <img src="./Assets/Sports Icons.png" alt="add" class="add-icon">
+               <span>Add Products</span> 
+            </button>
+              <button class="filter-btn">
+                <img src="./Assets/filter-lines.png" alt="filter" class="filter-icon">
+                <span>Filters</span></button>
+            </div>
+          </div>
+          <div class="table-container">
+            <table class="table-wrap">
+              <thead>
+                <tr>
+                  <th class="table-check">
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </th>
+                  <th>Sr No.:</th>
+                  <th>Heading 1</th>
+                  <th>Heading 2</th>
+                  <th>Heading 3</th>
+                  <th>Heading 4</th>
+                  <th>Heading 5</th>
+                  <th>Heading 6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-check">
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>1</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td class="table-check">
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>2</td>
+                  <td>Work</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>3</td>
+                  <td>content</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>4</td>
+                  <td>Reference</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>5</td>
+                  <td>Items</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>6</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>7</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>8</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>9</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="options" />
+                      <span class="slds-checkbox--faux"></span>
+                    </label>
+                  </td>
+                  <td>10</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+
+                <tr>
+                    <td class="table-check">
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>11</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td class="table-check">
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>12</td>
+                    <td>Work</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>13</td>
+                    <td>content</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>14</td>
+                    <td>Reference</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+  
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>15</td>
+                    <td>Items</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>16</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>17</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>18</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>19</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>20</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                
+                  <tr>
+                    <td class="table-check">
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>21</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td class="table-check">
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>22</td>
+                    <td>Work</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>23</td>
+                    <td>content</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>24</td>
+                    <td>Reference</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+  
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>25</td>
+                    <td>Items</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>26</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>27</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>28</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>29</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="slds-checkbox">
+                        <input type="checkbox" name="options" />
+                        <span class="slds-checkbox--faux"></span>
+                      </label>
+                    </td>
+                    <td>30</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                  
+              </tbody>
+            </table>
+          </div>
+          <ul id="product-list"></ul>
+          <div class="pagination">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
